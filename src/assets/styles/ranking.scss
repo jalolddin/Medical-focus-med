@@ -1,0 +1,41 @@
+.ranking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 4rem;
+    margin-bottom: 2rem;
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    div {
+        display: flex;
+        width: 92%;
+        margin: 0 auto;
+        margin-top: -1rem;
+        div {
+            width: 15%;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            h1 {
+                font-size: 5.5rem;
+                font-weight: 600;
+            }
+            h3 {
+                margin-top: -2.5rem;
+                font-size: 1.4rem;
+                line-height: 1.8rem;
+                font-weight: 500;
+            }
+        }
+        &:nth-child(5) {
+            background: linear-gradient(273.37deg, #73CEE3 1.45%, #2C90A8 119.64%);
+            width: 16.5rem;
+            height: 16rem;
+            color: white;
+            border-radius: 2rem;
+        }
+    }
+}

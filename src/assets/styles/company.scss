@@ -1,0 +1,260 @@
+        .company {
+            &__about {
+                display: flex;
+                padding-left: 1.5%;
+                gap: 5.5rem;
+                margin-top: 2rem;
+                &__left {
+                    width: 45%;
+                    h1 {
+                        font-size: 2.7em;
+                        span {
+                            color: #2C90A8;
+                        }
+                    }
+                    p {
+                        font-size: 1.1rem;
+                        color: #000000;
+                        opacity: 0.7;
+                        line-height: 1.7rem;
+                    }
+                    div {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 1.2rem;
+                        span {
+                            font-size: 1.1rem;
+                            background: linear-gradient(273.37deg, #73CEE3 1.45%, #2C90A8 119.64%);
+                            color: white;
+                            padding: 0.8rem;
+                            border-radius: 1.5rem;
+                        }
+                    }
+                }
+                &__right {
+                    margin: 2.5rem;
+                    background: linear-gradient(273.37deg, #73CEE3 1.45%, #2C90A8 119.64%);
+                    border-radius: 3rem;
+                    width: 38%;
+                    img {
+                        margin-left: 1.5rem;
+                        margin-top: -1.1rem;
+                        height: 100%;
+                        border-radius: 4rem;
+                        width: 100%;
+                    }
+                }
+            }
+            &__target {
+                display: flex;
+                justify-content: space-between;
+                padding-right: 3.5%;
+                &__left {
+                    margin: 2.5rem;
+                    background: linear-gradient(273.37deg, #73CEE3 1.45%, #2C90A8 119.64%);
+                    border-radius: 2rem;
+                    width: 38%;
+                    img {
+                        margin-left: 1rem;
+                        margin-top: -1rem;
+                        height: 100%;
+                        border-radius: 2rem;
+                        width: 100%;
+                    }
+                }
+                &__right {
+                    width: 52%;
+                    h1 {
+                        font-size: 2.7em;
+                        margin-top: 1.1rem;
+                    }
+                    p {
+                        font-size: 1.1rem;
+                        color: #000000;
+                        opacity: 0.7;
+                        line-height: 1.7rem;
+                    }
+                }
+            }
+            &__benefits {
+                h1 {
+                    font-size: 2.7em;
+                    margin-top: 1.5rem;
+                    text-align: center;
+                    margin-bottom: 2rem;
+                }
+                div {
+                    display: flex;
+                    justify-content: space-evenly;
+                    div {
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        width: 18%;
+                        height: 100%;
+                        p {
+                            line-height: 1.3rem;
+                            font-size: 0.9rem;
+                            font-weight: 550;
+                        }
+                        img {
+                            height: 13rem;
+                        }
+                    }
+                }
+            }
+            &__consulting {
+                display: flex;
+                justify-content: space-between;
+                padding-right: 3.5%;
+                margin-top: 3rem;
+                padding-left: 1.5%;
+                &__right {
+                    margin: 2.5rem;
+                    background: linear-gradient(273.37deg, #73CEE3 1.45%, #2C90A8 119.64%);
+                    border-radius: 2rem;
+                    width: 38%;
+                    img {
+                        margin-left: 1rem;
+                        margin-top: -1.1rem;
+                        height: 100%;
+                        border-radius: 2rem;
+                        width: 100%;
+                    }
+                }
+                &__left {
+                    width: 52%;
+                    h1 {
+                        font-size: 2.7em;
+                        margin-top: 1.1rem;
+                    }
+                    p {
+                        font-size: 1.1rem;
+                        color: #000000;
+                        opacity: 0.7;
+                        line-height: 1.7rem;
+                    }
+                }
+            }
+            // Service
+            &__service {
+                display: flex;
+                justify-content: space-between;
+                padding-right: 3.5%;
+                margin-top: 3rem;
+                &__left {
+                    margin: 1rem;
+                    background: linear-gradient(273.37deg, #73CEE3 1.45%, #2C90A8 119.64%);
+                    border-radius: 2rem;
+                    width: 42%;
+                    height: 100%;
+                    padding-bottom: 0.8rem;
+                    img {
+                        margin-left: 1rem;
+                        margin-top: -1.1rem;
+                        height: 100%;
+                        border-radius: 2rem;
+                        width: 100%;
+                    }
+                }
+                &__right {
+                    width: 48%;
+                    h1 {
+                        font-size: 2.7em;
+                        margin-top: 1.1rem;
+                    }
+                    p {
+                        font-size: 1.1rem;
+                        color: #000000;
+                        opacity: 0.7;
+                        line-height: 1.7rem;
+                    }
+                }
+            }
+            // Study
+            &__study {
+                display: flex;
+                justify-content: space-between;
+                padding-right: 3.5%;
+                margin-top: 4rem;
+                padding-left: 1.5%;
+                &__right {
+                    margin: 2.5rem;
+                    background: linear-gradient(273.37deg, #73CEE3 1.45%, #2C90A8 119.64%);
+                    border-radius: 2rem;
+                    width: 45%;
+                    img {
+                        margin-left: 1rem;
+                        margin-top: -1.1rem;
+                        height: 100%;
+                        border-radius: 2rem;
+                        width: 100%;
+                    }
+                }
+                &__left {
+                    width: 45%;
+                    h1 {
+                        font-size: 2.7em;
+                        margin-top: 1.1rem;
+                    }
+                    p {
+                        font-size: 1.1rem;
+                        color: #000000;
+                        opacity: 0.7;
+                        line-height: 1.7rem;
+                    }
+                    button {
+                        width: 50%;
+                        border-radius: 1.5rem;
+                        height: 2.5rem;
+                        background: linear-gradient(273.37deg, #73CEE3 1.45%, #2C90A8 119.64%);
+                        color: white;
+                        border: none;
+                        margin-top: 2rem;
+                    }
+                }
+            }
+            &__news {
+                padding-top: 2rem;
+                h1 {
+                    font-size: 2.7em;
+                    margin-top: 1.5rem;
+                    text-align: center;
+                }
+                div {
+                    display: flex;
+                    width: 93%;
+                    padding: 1rem;
+                    justify-content: space-between;
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        width: 18%;
+                        text-align: start;
+                        gap: 1rem;
+                        cursor: pointer;
+                        div {
+                            border-radius: 0.2rem;
+                            background-position: center;
+                            background-image: url('../images/header__image.jpg');
+                            height: 9rem;
+                            background-size: cover;
+                            width: 100%;
+                            background-repeat: no-repeat;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: flex-end;
+                            h6 {
+                                margin-bottom: 0;
+                                font-size: 0.8rem;
+                                color: white;
+                            }
+                        }
+                        h2 {
+                            font-size: 1rem;
+                            color: rgba(0, 0, 0, 0.8);
+                        }
+                    }
+                }
+            }
+        }

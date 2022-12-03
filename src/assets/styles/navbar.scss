@@ -1,0 +1,57 @@
+.navbar {
+    display: flex;
+    // width: 100%;
+    flex-direction: row;
+    background: #2C90A80D;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5rem;
+    &__logo {
+        cursor: pointer;
+    }
+    &__catalogy {
+        margin-left: 4%;
+        cursor: pointer;
+    }
+    &__links {
+        display: flex;
+        ul {
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                cursor: pointer;
+                list-style: none;
+                margin: 1rem;
+                font-size: 1rem;
+                &:hover {
+                    color: #2C90A8;
+                }
+            }
+        }
+    }
+    &__address {
+        display: flex;
+        div {
+            display: flex;
+            align-items: center;
+            margin: 1rem;
+            text-align: start;
+            img {
+                height: 1.5rem;
+            }
+            h4 {
+                text-align: start;
+                margin-left: 0.7rem;
+                text-decoration: underline;
+                font-weight: 500;
+                line-height: 1.2rem;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

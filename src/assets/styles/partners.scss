@@ -1,0 +1,29 @@
+.partners {
+    background: #F5F5F5;
+    padding-bottom: 2rem;
+    &__cards {
+        padding-left: 1.5%;
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        justify-content: flex-start;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        gap: 2rem;
+        column-gap: 4rem;
+        div {
+            width: 20%;
+            border-radius: 0.8rem;
+            background-color: white;
+            height: 13rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            img {
+                height: 5.5rem;
+                width: 65%;
+            }
+        }
+    }
+}
