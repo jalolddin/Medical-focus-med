@@ -1,64 +1,38 @@
-@media screen and (max-width: 620px) {
-    .navbar {
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        padding: 4%;
-        justify-content: space-evenly;
-        &__catalogy {
-            img {
-                height: 2.3rem;
-            }
-        }
-        &__logo {
-            img {
-                height: 1.4rem;
-            }
-        }
-        &__links {
-            display: none;
-        }
-        &__address {
-            display: none;
-        }
-    }
-    .home {
-        &__header {
-            padding-bottom: 7vw;
-            div {
-                width: 95%;
-                h1 {
-                    line-height: 11vw;
-                    font-size: 8vw;
-                }
-                p {
-                    font-size: 4.5vw;
-                    width: 100%;
+    @media screen and (max-width: 620px) {
+        .navbar {
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            padding: 4%;
+            justify-content: space-evenly;
+            &__catalogy {
+                img {
+                    height: 2.3rem;
                 }
             }
-            button {
-                width: 95%;
-            }
-        }
-        &__department {
-            div {
-                div {
-                    width: 100%;
+            &__logo {
+                img {
+                    height: 1.4rem;
                 }
+            }
+            &__links {
+                display: none;
+            }
+            &__address {
+                display: none;
             }
         }
         .ranking {
             div {
                 flex-direction: column;
                 gap: 1.5rem;
-            }
-        }
-        &__partners {
-            div {
-                margin: 0 auto;
-                justify-content: center;
+                div {
+                    width: 95%;
+                    // h3 {}
+                }
             }
         }
         .contact {
+            width: 90%;
             div {
                 flex-direction: column;
                 div {
@@ -75,79 +49,197 @@
                 }
             }
         }
-    }
-    .footer {
-        padding-left: 0.3rem;
-        display: flex;
-        flex-direction: column;
-        &__left {
-            width: 100%;
-            margin: 0 auto;
-            img {
-                margin: 0 auto;
-                height: 2.2rem;
+        .home {
+            &__header {
+                padding-bottom: 7vw;
+                div {
+                    width: 95%;
+                    h1 {
+                        line-height: 11vw;
+                        font-size: 8vw;
+                    }
+                    p {
+                        font-size: 4.5vw;
+                        width: 100%;
+                    }
+                }
+                button {
+                    width: 95%;
+                }
             }
-            p {
-                width: 100%;
-                margin-left: 7%;
+            &__department {
+                div {
+                    div {
+                        width: 100%;
+                    }
+                }
             }
-        }
-        &__center {
-            width: 100%;
-            margin-left: 0;
-            text-align: center;
-            justify-content: center;
-            ul {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 2.5rem;
-                width: 100%;
-                margin-left: 5%;
-                li {
-                    font-size: 1.3rem;
+            &__partners {
+                h1 {
+                    width: 95%;
+                    text-align: center;
+                }
+                div {
+                    margin: 0 auto;
+                    justify-content: center;
                 }
             }
         }
-        &__right {
-            width: 100%;
-            margin-left: 0;
-            text-align: center;
-            div {
-                display: flex;
-                flex-wrap: wrap;
-                width: 95%;
-                justify-content: center;
-            }
-        }
-        &__button {
-            width: 85%;
-            margin: 0 auto;
-            button {
-                margin: 0 auto;
-                margin-bottom: 3rem;
-            }
-        }
-    }
-    .catalogy {
-        &__image {
-            width: 100%;
-        }
-        &__content {
+        .footer {
+            padding-left: 0.3rem;
+            display: flex;
             flex-direction: column;
-            align-items: center;
-            gap: 2rem;
+            padding: 0;
             &__left {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 width: 100%;
+                margin: 0 auto;
+                img {
+                    margin: 0 auto;
+                    height: 2.2rem;
+                }
+                p {
+                    width: 95%;
+                    margin-left: 7%;
+                }
+            }
+            &__center {
+                width: 95%;
+                margin: 0 auto;
+                text-align: center;
+                justify-content: center;
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 2.5rem;
+                    width: 100%;
+                    margin: 0 auto;
+                    li {
+                        font-size: 1.3rem;
+                    }
+                }
             }
             &__right {
-                width: 100%;
-                grid-template-columns: 47% 47%;
-                justify-content: center;
+                width: 95%;
+                margin-left: 0;
+                text-align: center;
                 div {
-                    height: 10rem;
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+            &__button {
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                button {
+                    margin: 0 auto;
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+        .catalogy {
+            &__image {
+                width: 100%;
+            }
+            &__content {
+                width: 95%;
+                margin: 0 auto;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+                &__left {
+                    width: 100%;
+                    div {
+                        p {
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+                &__right {
+                    width: 100%;
+                    grid-template-columns: 47% 47%;
+                    justify-content: center;
+                    div {
+                        height: 20rem;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .company {
+            &__benefits {
+                div {
+                    flex-direction: column;
+                    gap: 1.5rem;
+                    div {
+                        width: 90%;
+                        margin: 0 auto;
+                        p {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            &__service {
+                flex-direction: column-reverse;
+                width: 100%;
+                padding: 0;
+                align-items: center;
+                &__left {
+                    width: 95%;
+                    margin: 0 auto;
+                    margin-top: 3rem;
+                    img {
+                        margin-left: 1rem;
+                        margin-top: -1.1rem;
+                    }
+                }
+                &__right {
+                    width: 85%;
+                    margin: 0 auto;
+                }
+            }
+            &__news {
+                div {
+                    flex-direction: column;
+                    // align-items: center;
+                    width: 95%;
+                    // margin: 0 auto;
+                    div {
+                        width: 92%;
+                        div {
+                            width: 85%;
+                        }
+                    }
+                }
+            }
+            &__study {
+                flex-direction: column;
+                width: 100%;
+                padding: 0;
+                align-items: center;
+                &__left {
+                    width: 80%;
+                    margin: 0 auto;
+                    button {
+                        width: 100%;
+                    }
+                }
+                &__right {
+                    width: 95%;
+                    margin: 0 auto;
+                    margin-top: 4rem;
+                    img {
+                        margin-left: 1rem;
+                        margin-top: -1.1rem;
+                    }
                 }
             }
         }
     }
-}

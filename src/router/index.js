@@ -1,4 +1,5 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import Vue from 'vue'
+import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Catalogy from '../views/Catalog.vue'
 import Company from '../views/Company.vue'
@@ -7,6 +8,10 @@ import Partners from '../views/Partners.vue'
 import Contacts from '../views/Contacts.vue'
 import CatalogId from '../views/CatalogId.vue'
 import Service from '../views/Service.vue'
+import PartnersId from '../views/PartnersId.vue'
+
+Vue.use(VueRouter)
+
 const routes = [{
         path: '/',
         name: 'home',
@@ -38,6 +43,11 @@ const routes = [{
         component: Partners
     },
     {
+        path: '/partners/:id',
+        name: 'PartnersId',
+        component: PartnersId
+    },
+    {
         path: '/contacts',
         name: 'Contacts',
         component: Contacts
@@ -49,8 +59,9 @@ const routes = [{
     }
 ]
 
-const router = createRouter({
-    history: createWebHistory(process.env.BASE_URL),
+const router = new VueRouter({
+    // mode: 'history',
+    // base: process.env.BASE_URL,
     routes
 })
 

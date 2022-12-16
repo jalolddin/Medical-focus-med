@@ -1,6 +1,8 @@
-import { createApp } from 'vue'
+import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import store from './store'
+// import router from './router'
 import './assets/styles/catalogy.scss'
 import './assets/styles/company.scss'
 import './assets/styles/contacts.scss'
@@ -12,4 +14,10 @@ import './assets/styles/projects.scss'
 import './assets/styles/ranking.scss'
 import './assets/styles/responsive.scss'
 import './assets/styles/service.scss'
-createApp(App).use(router).mount('#app')
+Vue.config.productionTip = false
+
+new Vue({
+    router,
+    store,
+    render: h => h(App)
+}).$mount('#app')
