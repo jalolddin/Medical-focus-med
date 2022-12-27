@@ -1,33 +1,41 @@
         .company {
+            padding-bottom: 5rem;
+            width: 85%;
+            margin: 0 auto;
             &__about {
                 display: flex;
                 flex-wrap: wrap;
-                padding-left: 1.5%;
+                // padding-left: 1.5%;
+                // justify-content: center;
                 gap: 5.5rem;
                 margin-top: 2rem;
+                width: 101%;
                 &__left {
-                    width: 45%;
+                    width: 102%;
+                    margin: 0 auto;
                     h1 {
+                        text-align: center;
                         font-size: 2.7em;
                         span {
                             color: #2C90A8;
                         }
                     }
                     p {
-                        font-size: 1.1rem;
+                        width: 100%;
+                        font-size: 1.4rem;
                         color: #000000;
                         opacity: 0.7;
-                        line-height: 1.7rem;
+                        line-height: 2.8rem;
                     }
                     div {
                         display: flex;
                         flex-wrap: wrap;
-                        gap: 1.2rem;
+                        gap: 2rem;
                         span {
                             font-size: 1.1rem;
                             background: linear-gradient(273.37deg, #73CEE3 1.45%, #2C90A8 119.64%);
                             color: white;
-                            padding: 0.8rem;
+                            padding: 0.9rem;
                             border-radius: 1.5rem;
                         }
                     }
@@ -46,38 +54,38 @@
                     }
                 }
             }
-            &__target {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                padding-right: 3.5%;
-                &__left {
-                    margin: 2.5rem;
-                    background: linear-gradient(273.37deg, #73CEE3 1.45%, #2C90A8 119.64%);
-                    border-radius: 2rem;
-                    width: 38%;
-                    img {
-                        margin-left: 1rem;
-                        margin-top: -1rem;
-                        height: 100%;
-                        border-radius: 2rem;
-                        width: 100%;
-                    }
-                }
-                &__right {
-                    width: 52%;
-                    h1 {
-                        font-size: 2.7em;
-                        margin-top: 1.1rem;
-                    }
-                    p {
-                        font-size: 1.1rem;
-                        color: #000000;
-                        opacity: 0.7;
-                        line-height: 1.7rem;
-                    }
-                }
-            }
+            // &__target {
+            //     display: flex;
+            //     flex-wrap: wrap;
+            //     justify-content: space-between;
+            //     padding-right: 3.5%;
+            //     &__left {
+            //         margin: 2.5rem;
+            //         background: linear-gradient(273.37deg, #73CEE3 1.45%, #2C90A8 119.64%);
+            //         border-radius: 2rem;
+            //         width: 38%;
+            //         img {
+            //             margin-left: 1rem;
+            //             margin-top: -1rem;
+            //             height: 100%;
+            //             border-radius: 2rem;
+            //             width: 100%;
+            //         }
+            //     }
+            //     &__right {
+            //         width: 52%;
+            //         h1 {
+            //             font-size: 2.7em;
+            //             margin-top: 1.1rem;
+            //         }
+            //         p {
+            //             font-size: 1.1rem;
+            //             color: #000000;
+            //             opacity: 0.7;
+            //             line-height: 1.7rem;
+            //         }
+            //     }
+            // }
             &__benefits {
                 h1 {
                     font-size: 2.7em;
@@ -88,7 +96,7 @@
                 div {
                     display: flex;
                     flex-wrap: wrap;
-                    justify-content: space-evenly;
+                    justify-content: space-between;
                     div {
                         text-align: center;
                         display: flex;
@@ -106,40 +114,40 @@
                     }
                 }
             }
-            &__consulting {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                padding-right: 3.5%;
-                margin-top: 3rem;
-                padding-left: 1.5%;
-                &__right {
-                    margin: 2.5rem;
-                    background: linear-gradient(273.37deg, #73CEE3 1.45%, #2C90A8 119.64%);
-                    border-radius: 2rem;
-                    width: 38%;
-                    img {
-                        margin-left: 1rem;
-                        margin-top: -1.1rem;
-                        height: 100%;
-                        border-radius: 2rem;
-                        width: 100%;
-                    }
-                }
-                &__left {
-                    width: 52%;
-                    h1 {
-                        font-size: 2.7em;
-                        margin-top: 1.1rem;
-                    }
-                    p {
-                        font-size: 1.1rem;
-                        color: #000000;
-                        opacity: 0.7;
-                        line-height: 1.7rem;
-                    }
-                }
-            }
+            // &__consulting {
+            //     display: flex;
+            //     flex-wrap: wrap;
+            //     justify-content: space-between;
+            //     padding-right: 3.5%;
+            //     margin-top: 3rem;
+            //     padding-left: 1.5%;
+            //     &__right {
+            //         margin: 2.5rem;
+            //         background: linear-gradient(273.37deg, #73CEE3 1.45%, #2C90A8 119.64%);
+            //         border-radius: 2rem;
+            //         width: 38%;
+            //         img {
+            //             margin-left: 1rem;
+            //             margin-top: -1.1rem;
+            //             height: 100%;
+            //             border-radius: 2rem;
+            //             width: 100%;
+            //         }
+            //     }
+            //     &__left {
+            //         width: 52%;
+            //         h1 {
+            //             font-size: 2.7em;
+            //             margin-top: 1.1rem;
+            //         }
+            //         p {
+            //             font-size: 1.1rem;
+            //             color: #000000;
+            //             opacity: 0.7;
+            //             line-height: 1.7rem;
+            //         }
+            //     }
+            // }
             // Service
             &__service {
                 display: flex;
@@ -147,16 +155,17 @@
                 justify-content: space-between;
                 padding-right: 3.5%;
                 margin-top: 3rem;
+                align-items: center;
                 &__left {
                     margin: 1rem;
                     background: linear-gradient(273.37deg, #73CEE3 1.45%, #2C90A8 119.64%);
                     border-radius: 2rem;
-                    width: 42%;
-                    height: 100%;
+                    width: 45%;
+                    height: 23rem;
                     padding-bottom: 0.8rem;
                     img {
-                        margin-left: 1rem;
-                        margin-top: -1.1rem;
+                        margin-left: 0.8rem;
+                        margin-top: -0.6rem;
                         height: 100%;
                         border-radius: 2rem;
                         width: 100%;

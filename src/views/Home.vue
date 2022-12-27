@@ -18,35 +18,35 @@
     <h1>Популярные направление</h1>
     <div>
         <div>
-            <span></span>
+            <img src="../assets/images/ifa.png" alt="">
             <h3>ИФА анализаторы</h3>
         </div>
         <div>
-            <span></span>
+            <img src="../assets/images/psr.png" alt="">
             <h3>ПЦР лаборатории</h3>
         </div>
         <div>
-            <span></span>
+            <img src="../assets/images/labaratory.png" alt="">
             <h3>Лабораторные приборы</h3>
         </div>
         <div>
-            <span></span>
+            <img src="../assets/images/moch.png" alt="">
             <h3>Мочевой анализаторы и тест-полоски</h3>
         </div>
         <div>
-            <span></span>
+            <img src="../assets/images/analiz.png" alt="">
             <h3>Биохимические анализаторы</h3>
         </div>
         <div>
-            <span></span>
+            <img src="../assets/images/bio.png" alt="">
             <h3>Сперма анализаторы</h3>
         </div>
         <div>
-            <span></span>
+            <img src="../assets/images/gas.png" alt="">
             <h3>Анализаторы газов и электролитов крови</h3>
         </div>
         <div>
-            <span></span>
+            <img src="../assets/images/dose.png" alt="">
             <h3>Мочевой анализаторы и тест-полоски</h3>
         </div>
     </div>
@@ -89,6 +89,3 @@ components: {
 }
 }
 </script>
-<style lang="scsss" scoped>
-
-</style>

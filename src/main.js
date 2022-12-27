@@ -14,10 +14,12 @@ import './assets/styles/projects.scss'
 import './assets/styles/ranking.scss'
 import './assets/styles/responsive.scss'
 import './assets/styles/service.scss'
+import PureCounter from '@srexi/purecounterjs'
 Vue.config.productionTip = false
 
 new Vue({
     router,
     store,
+    PureCounter,
     render: h => h(App)
 }).$mount('#app')

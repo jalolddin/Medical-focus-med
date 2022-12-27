@@ -2,40 +2,62 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 4rem;
+    padding-top: 2rem;
     margin-bottom: 2rem;
+    background-image: url('https://endo.uz/wp-content/themes/endo/assets/img/rectangle.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    // border-radius: 2rem;
+    padding-bottom: 3rem;
+    margin-top: 2rem;
+    width: 100%;
     h1 {
-        font-size: 3rem;
+        font-size: 4rem;
+        color: #2C90A8;
         text-align: center;
     }
     div {
         display: flex;
-        width: 92%;
+        width: 100%;
         margin: 0 auto;
-        margin-top: -1rem;
+        margin-top: -3rem;
+        flex-wrap: wrap;
         div {
-            width: 15%;
+            width: 30%;
             align-items: center;
             text-align: center;
             display: flex;
             flex-direction: column;
             h1 {
-                font-size: 5.5rem;
-                font-weight: 600;
+                font-weight: 900;
+                color: #2C90A8;
+                font-size: 9.375em;
+                height: 10rem;
+                // &::after {
+                //     font: 800 40px system-ui;
+                //     content: counter(count);
+                //     animation: counter 5s linear infinite alternate;
+                //     counter-reset: count 0;
+                // }
             }
             h3 {
+                color: rgb(89 94 99);
+                font-size: 22px;
+                line-height: 5rem;
+                text-align: center;
                 margin-top: -2.5rem;
                 font-size: 1.4rem;
                 line-height: 1.8rem;
                 font-weight: 500;
             }
         }
-        &:nth-child(5) {
-            background: linear-gradient(273.37deg, #73CEE3 1.45%, #2C90A8 119.64%);
-            width: 16.5rem;
-            height: 16rem;
-            color: white;
-            border-radius: 2rem;
-        }
+        // &:nth-child(5) {
+        //     // background: linear-gradient(273.37deg, #73CEE3 1.45%, #2C90A8 119.64%);
+        //     width: 16.5rem;
+        //     height: 16rem;
+        //     // color: white;
+        //     border-radius: 2rem;
+        // }
     }
 }

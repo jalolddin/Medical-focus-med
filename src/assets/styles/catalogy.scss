@@ -1,10 +1,16 @@
         .catalogy {
+            width: 85%;
+            margin: 0 auto;
             &__image {
                 background-image: url('../images/catalogy__image.png');
                 background-size: cover;
                 color: white;
                 position: relative;
+                width: 100%;
+                margin: 0 auto;
+                border-radius: 10px;
                 &__text {
+                    border-radius: 10px;
                     padding: 0.2rem;
                     padding-left: 1.4rem;
                     z-index: 1;
@@ -28,7 +34,7 @@
                 }
             }
             &__content {
-                width: 98%;
+                width: 100%;
                 margin: 0 auto;
                 padding-top: 2rem;
                 padding-bottom: 5rem;
@@ -37,12 +43,12 @@
                 &__left {
                     display: flex;
                     flex-direction: column;
-                    width: 28%;
-                    gap: 0.1rem;
+                    width: 32%;
+                    // gap: 0.1rem;
                     div {
                         padding: 0.7rem;
                         cursor: pointer;
-                        border-radius: 0.5rem;
+                        border-radius: 10px;
                         justify-content: space-between;
                         display: flex;
                         flex-direction: row;
@@ -56,11 +62,12 @@
                 &__right {
                     display: flex;
                     flex-wrap: wrap;
-                    width: 54%;
+                    justify-content: space-between;
+                    width: 65%;
                     gap: 1.5rem;
                     height: 100%;
                     div {
-                        width: 14.5rem;
+                        width: 15.5rem;
                         height: 14.5rem;
                         background-repeat: no-repeat;
                         border-radius: 0.3rem;
@@ -73,8 +80,8 @@
                         h4 {
                             color: white;
                             background: RGBa(0, 0, 0, 0.5);
-                            width: 96%;
-                            border-radius: 0.3rem;
+                            width: 100%;
+                            // border-radius: 0.3rem;
                             padding: 0.1rem;
                             text-align: center;
                             font-size: 0.8rem;

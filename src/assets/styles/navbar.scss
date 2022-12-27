@@ -2,21 +2,17 @@
     display: flex;
     // width: 100%;
     flex-direction: row;
-    background: #2C90A80D;
-    justify-content: space-evenly;
+    // background: #2C90A80D;
+    justify-content: space-between;
     align-items: center;
+    font-family: "OpenSans-SemiBold", sans-serif;
     padding: 0.5rem;
+    width: 85%;
+    margin: 0 auto;
     &__logo {
         cursor: pointer;
         img {
             height: 2rem;
-        }
-    }
-    &__catalogy {
-        margin-left: 4%;
-        cursor: pointer;
-        img {
-            height: 3rem;
         }
     }
     &__links {
@@ -30,34 +26,44 @@
             justify-content: space-between;
             align-items: center;
             li {
+                font-weight: 500;
                 cursor: pointer;
                 list-style: none;
-                margin: 1rem;
-                font-size: 14px;
+                margin: 1.5rem;
+                font-size: 1rem;
                 &:hover {
                     color: #2C90A8;
                 }
             }
         }
-    }
-    &__address {
-        display: flex;
-        div {
+        .contact__link {
+            background-color: #2C90A8;
+            color: white;
+            border-radius: 50px;
+            height: 2.8rem;
             display: flex;
+            justify-content: center;
             align-items: center;
-            margin: 1rem;
-            text-align: start;
-            img {
-                height: 1.5rem;
-            }
-            h4 {
-                text-align: start;
-                margin-left: 0.7rem;
-                text-decoration: underline;
-                font-weight: 500;
-                line-height: 1.2rem;
-                font-size: 0.7rem;
-            }
         }
     }
+    // &__address {
+    //     display: flex;
+    //     div {
+    //         display: flex;
+    //         align-items: center;
+    //         margin: 1rem;
+    //         text-align: start;
+    //         img {
+    //             height: 1.5rem;
+    //         }
+    //         h4 {
+    //             text-align: start;
+    //             margin-left: 0.7rem;
+    //             text-decoration: underline;
+    //             font-weight: 500;
+    //             line-height: 1.2rem;
+    //             font-size: 0.7rem;
+    //         }
+    //     }
+    // }
 }

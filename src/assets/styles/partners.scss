@@ -1,12 +1,14 @@
 .partners {
-    background: #F5F5F5;
+    // background: #F5F5F5;
     padding-bottom: 2rem;
+    width: 85%;
+    margin: 0 auto;
     &__cards {
-        padding-left: 1.5%;
+        // padding-left: 1.5%;
         display: flex;
         flex-wrap: wrap;
-        width: 95%;
-        justify-content: flex-start;
+        width: 100%;
+        justify-content: space-between;
         margin-top: 2rem;
         margin-bottom: 2rem;
         gap: 2rem;
@@ -14,15 +16,14 @@
         div {
             width: 20%;
             border-radius: 0.8rem;
-            background-color: white;
-            height: 13rem;
+            background: white;
+            height: 10rem;
             display: flex;
             justify-content: center;
             align-items: center;
             cursor: pointer;
             img {
-                height: 5.5rem;
-                width: 65%;
+                height: 3.5rem;
             }
         }
     }
