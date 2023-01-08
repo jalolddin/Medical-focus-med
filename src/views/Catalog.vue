@@ -7,13 +7,13 @@
                     <router-link :to="{name: 'home'}">
                     Главная 
                     </router-link>
-                    -> Каталог</p>
+                    / Каталог</p>
             </div>
         </div>
 <!-- Types -->
 <div class="catalogy__content">
     <div class="catalogy__content__left">
-<div v-for="product in products.categories" :key="product">
+<div @click="showItem()" v-for="product in products.categories" :key="product">
 <p>{{product.title}}</p>
 <p>{{product.product_count}}</p>
 </div>
@@ -21,18 +21,25 @@
 
     <!-- Right Side -->
 
-    <div class="catalogy__content__right">
-<div @click="goInside(product.id)" v-show="product.category === catalogy" v-for="product in products.products" :key="product" v-bind:style="{ 'background-image': 'url(' + 'https://focusmed.uz' + product.photo + ')' }">
+    <div     class="catalogy__content__right">
+<div  v-show="product.category === catalogy" v-for="product in products.products" :key="product" v-bind:style="{ 'background-image': 'url(' + 'https://focusmed.uz' + product.photo + ')' }">
 <h4>{{product.title}}</h4>
 </div>
     </div>
+
 </div>
 
     </div>
 </template>
 <script>
 import axios from 'axios'
+
+import {Tabs, Tab} from 'vue-tabs-component';
 export default {    
+    components: {
+        Tabs,
+        Tab
+    },
     data(){
     return{
         products: [],

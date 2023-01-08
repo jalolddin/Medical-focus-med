@@ -1,6 +1,7 @@
 .service {
     width: 85%;
     margin: 0 auto;
+    padding-bottom: 5rem;
     &__content {
         display: flex;
         width: 100%;
@@ -24,9 +25,9 @@
             }
         }
         &__right {
-            width: 50%;
+            width: 55%;
             img {
-                height: 95%;
+                height: 100%;
                 width: 100%;
                 border-radius: 1.5rem;
             }
@@ -51,6 +52,7 @@
                 border-radius: 50%;
                 font-size: 3.5rem;
                 color: white;
+                width: 5.5rem;
             }
             p {
                 width: 80%;

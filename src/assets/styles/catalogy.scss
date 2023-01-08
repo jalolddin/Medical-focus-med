@@ -97,10 +97,37 @@
                 }
             }
             &__id {
+                width: 85%;
+                margin: 0 auto;
+                .partner_id {
+                    padding-top: 2rem;
+                    .info__1 {
+                        margin: 0 auto;
+                        width: 95%;
+                        margin-bottom: 5rem;
+                        // background-color: red;
+                        img {
+                            // height: 10%;
+                            // width: 20rem;
+                            height: 5rem;
+                            float: left;
+                            margin-right: 2rem;
+                        }
+                        p {
+                            text-align: justify;
+                            // width: 90%;
+                            // line-height: 1rem;
+                            // font-size: 1.1rem;
+                        }
+                        h1 {
+                            font-size: 2rem;
+                        }
+                    }
+                }
                 &__title {
                     display: flex;
                     justify-content: space-between;
-                    width: 97%;
+                    width: 100%;
                     padding-top: 2rem;
                     margin: 0 auto;
                     .info__1 {

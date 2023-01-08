@@ -7,7 +7,7 @@
                     <router-link :to="{name: 'home'}">
                     Главная 
                     </router-link>
-                    -> О Компании</p>
+                    / О Компании</p>
             </div>
         </div>
         <!-- About Company -->
@@ -97,7 +97,7 @@
     <!-- Service -->
     <div class="company__service">
         <div class="company__service__left">
-            <img src="../assets/images/service__image.svg" alt="">
+            <img src="../assets/images/service__image.png" alt="">
         </div>
         <div class="company__service__right">
 <h1>Сервисное обслуживание</h1>

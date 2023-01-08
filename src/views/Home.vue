@@ -5,7 +5,7 @@
 
 <div class="home__header">
     <div>
-        <h1>МЕДИЦИНСКИЕ ОБОРУДОВАНИЯ И РАСХОДНЫЕ МАТЕРИАЛЫ</h1>
+        <h1>ЛАБОРАТОРНОЕ ОБОРУДОВАНИЕ, РЕАГЕНТЫ и РАСХОДНЫЕ МАТЕРИАЛЫ</h1>
         <p>Реализация многоуровневых проектов по созданию, реконструкции и оснащению лечебно-профилактических учреждений</p>
     </div>
     <router-link :to="{name: 'catalogy'}">
@@ -19,27 +19,27 @@
     <div>
         <div>
             <img src="../assets/images/ifa.png" alt="">
-            <h3>ИФА анализаторы</h3>
+            <h3>Гематологические анализаторы</h3>
         </div>
         <div>
             <img src="../assets/images/psr.png" alt="">
-            <h3>ПЦР лаборатории</h3>
+            <h3> Биохимические анализаторы</h3>
         </div>
         <div>
             <img src="../assets/images/labaratory.png" alt="">
-            <h3>Лабораторные приборы</h3>
+            <h3>Анализаторы мочи</h3>
         </div>
         <div>
             <img src="../assets/images/moch.png" alt="">
-            <h3>Мочевой анализаторы и тест-полоски</h3>
+            <h3>Анализаторы для ИФА</h3>
         </div>
         <div>
             <img src="../assets/images/analiz.png" alt="">
-            <h3>Биохимические анализаторы</h3>
+            <h3>Коагулометры</h3>
         </div>
         <div>
             <img src="../assets/images/bio.png" alt="">
-            <h3>Сперма анализаторы</h3>
+            <h3>ПЦР лаборатория</h3>
         </div>
         <div>
             <img src="../assets/images/gas.png" alt="">
@@ -47,7 +47,7 @@
         </div>
         <div>
             <img src="../assets/images/dose.png" alt="">
-            <h3>Мочевой анализаторы и тест-полоски</h3>
+            <h3>Микробиологические анализаторы</h3>
         </div>
     </div>
 </div>
@@ -56,36 +56,84 @@
 <!-- Partners -->
 <div class="home__partners">
     <h1>Нашы партнёры</h1>
-    <div>
-        <img src="../assets/images//partner_1.jpg" alt="">
-        <img src="../assets/images//partner_2.jpg" alt="">
-        <img src="../assets/images//partner_3.jpg" alt="">
-        <img src="../assets/images//partner_4.jpg" alt="">
-        <img src="../assets/images//partner_5.jpg" alt="">
-        <img src="../assets/images//partner_6.jpg" alt="">
-        <img src="../assets/images//partner_12.png" alt="">
-        <img src="../assets/images//partner_8.jpg" alt="">
-        <img src="../assets/images//partner_9.jpg" alt="">
-        <img src="../assets/images//partner_10.jpg" alt="">
-        <img src="../assets/images//partner_11.jpg" alt="">
-        <img src="../assets/images//partner_13.jpg" alt="">
-        <img src="../assets/images//partner_14.jpg" alt="">
+<!-- <div class="partner__images"> -->
+    <VueSlickCarousel   v-bind="settings" v-if="partners.length">
+    <div  class="partner__image"  v-for="partner in partners" :key="partner">
+        <img  style="width: 100%" :src="('https://focusmed.uz/' + partner.photo)" alt="">
     </div>
+    </VueSlickCarousel>
+    <VueSlickCarousel   v-bind="settings_2" v-if="partners.length">
+    <div  class="partner__image"  v-for="partner in partners" :key="partner">
+        <img  style="width: 100%" :src="('https://focusmed.uz/' + partner.photo)" alt="">
+    </div>
+    </VueSlickCarousel>
+    <VueSlickCarousel   v-bind="settings" v-if="partners.length">
+    <div  class="partner__image"  v-for="partner in partners" :key="partner">
+        <img  style="width: 100%" :src="('https://focusmed.uz/' + partner.photo)" alt="">
+    </div>
+    </VueSlickCarousel>
+    
+<!-- </div> -->
+
 </div>
 <Contact />
 </div>
 </template>
 <script>
+
 import Footer from '../components/Footer.vue'
 import Navbar from '../components/Navbar.vue'
 import Ranking from '../components/Ranking.vue'
 import Contact from '../components/Contact.vue'
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+import axios from 'axios'
 export default{
 components: {
     Navbar,
     Ranking,
     Contact,
-    Footer
+    Footer,
+    VueSlickCarousel 
+},
+data(){
+    return{
+partners: null,
+settings: {
+    "arrows": false,
+  "dots": false,
+  "infinite": true,
+  "slidesToShow": 5,
+  "slidesToScroll": 1,
+  "autoplay": true,
+  "rows": 1,
+  "speed": 5000,
+  "autoplaySpeed": 0,
+  "cssEase": "linear",
+//   "rtl": true
+},
+settings_2: {
+    "arrows": false,
+  "dots": false,
+  "infinite": true,
+  "slidesToShow": 5,
+  "slidesToScroll": 1,
+  "autoplay": true,
+  "rows": 1,
+  "speed": 5000,
+  "autoplaySpeed": 0,
+  "cssEase": "linear",
+  "rtl": true
 }
+    }
+},
+created(){
+        axios.get('https://focusmed.uz/api/partners').then((res) => {
+            this.partners = res.data
+            console.log(res.data)
+        }).catch((err) => {
+            console.log(err)
+        })
+    }
 }
 </script>

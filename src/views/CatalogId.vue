@@ -8,7 +8,7 @@
                     Главная 
                     </router-link>
                     <router-link :to="{name: 'catalogy'}">
-                            -> {{product.category}}
+                            / {{product.category}}
                         </router-link>
                 </p>
             </div>

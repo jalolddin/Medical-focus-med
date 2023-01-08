@@ -7,7 +7,7 @@
                     <router-link :to="{name: 'home'}">
                     Главная 
                     </router-link>
-                    -> Сервисный центр </p>
+                    / Сервисный центр </p>
             </div>
         </div>
         <div class="service__content">
@@ -18,7 +18,7 @@
 Инженеры сервисного центра имеют сертификаты на ремонт и обслуживание медицинского оборудования, проходят курсы повышения квалификации.</p>
 </div>
 <div class="service__content__right">
-    <img src="../assets/images/service__image.svg" alt="">
+    <img src="../assets/images/service__image.png" alt="">
 </div>
         </div>
         <div class="service__steps">

@@ -7,7 +7,7 @@
                     <router-link :to="{name: 'home'}">
                     Главная 
                     </router-link>
-                    -> Контакты</p>
+                    / Контакты</p>
             </div>
         </div>
         <div class="contacts__address">

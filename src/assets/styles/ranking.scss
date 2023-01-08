@@ -29,16 +29,24 @@
             text-align: center;
             display: flex;
             flex-direction: column;
+            font-family: sans-serif;
             h1 {
                 font-weight: 900;
                 color: #2C90A8;
-                font-size: 9.375em;
+                font-size: 12.375em;
                 height: 10rem;
+                display: flex;
+                gap: 0.1rem;
+                p {
+                    margin-top: 1.8rem;
+                    font-size: 7.5rem;
+                }
                 // &::after {
-                //     font: 800 40px system-ui;
-                //     content: counter(count);
+                //     content: '+';
+                //     font: 800 4rem system-ui;
+                //     // content: counter(count);
                 //     animation: counter 5s linear infinite alternate;
-                //     counter-reset: count 0;
+                //     // counter-reset: count 0;
                 // }
             }
             h3 {
