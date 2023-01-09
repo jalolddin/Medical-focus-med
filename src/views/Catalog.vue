@@ -14,7 +14,7 @@
 <div class="catalogy__content">
     <div class="catalogy__content__left">
 <div @click="showItem()" v-for="product in products.categories" :key="product">
-<p>{{product.title}}</p>
+<p class="title">{{product.title}}</p>
 <p>{{product.product_count}}</p>
 </div>
     </div>

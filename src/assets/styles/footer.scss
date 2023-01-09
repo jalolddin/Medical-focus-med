@@ -6,11 +6,28 @@
     display: flex;
     align-items: flex-start;
     padding: 3rem;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     gap: 3rem;
     justify-content: space-between;
     padding-bottom: 5rem;
+    &__icons {
+        // background-color: red;
+        display: flex;
+        margin-top: 1rem;
+        gap: 3.2rem;
+        cursor: pointer;
+        div {
+            border: 1px solid #2C90A8;
+            width: 3.5rem;
+            height: 3.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            padding: 0.4rem;
+        }
+    }
     &__left {
         display: flex;
         flex-direction: column;
@@ -18,12 +35,8 @@
         gap: 2rem;
         width: 40%;
         padding-top: 1.5rem;
-        p {
-            line-height: 1.6rem;
-            color: #696969;
-        }
         img {
-            height: 2.5rem;
+            height: 3.5rem;
         }
     }
     &__center {

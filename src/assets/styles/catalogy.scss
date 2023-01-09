@@ -45,6 +45,9 @@
                     flex-direction: column;
                     width: 32%;
                     // gap: 0.1rem;
+                    .title {
+                        width: 80%;
+                    }
                     div {
                         padding: 0.7rem;
                         cursor: pointer;

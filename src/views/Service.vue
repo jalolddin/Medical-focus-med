@@ -11,14 +11,14 @@
             </div>
         </div>
         <div class="service__content">
+            <div class="service__content__right">
+                <img src="../assets/images/service__image.png" alt="">
+            </div>
 <div class="service__content__left">
-    <h1>Сервисный центр <span>"FOCUSMED"</span> </h1>
+    <h1>Сервисный центр <span>FOCUSMED</span> </h1>
     <p>Сервисный центр FOCUSMED обеспечивает квалифицированную техническую поддержку лабораторного медицинского оборудования.
 Мы сотрудничаем с лабораториями государственных и коммерческих учреждений. Работы проводятся стационарно в условиях высокотехнологичной мастерской или с выездом на место эксплуатации оборудования.
 Инженеры сервисного центра имеют сертификаты на ремонт и обслуживание медицинского оборудования, проходят курсы повышения квалификации.</p>
-</div>
-<div class="service__content__right">
-    <img src="../assets/images/service__image.png" alt="">
 </div>
         </div>
         <div class="service__steps">

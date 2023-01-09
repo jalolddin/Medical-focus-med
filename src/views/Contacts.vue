@@ -77,7 +77,7 @@
 
             </div>
         </div>
-        <div class="mapouter"><div class="gmap_canvas"><iframe width="494" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Endo%20system,%20tashkent&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br></div></div>
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="494" height="500" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11995.851466727729!2d69.19934302568437!3d41.26614441036549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b98a3414be1%3A0xa66df2a6aebb2ca7!2sFocusmed!5e0!3m2!1suz!2s!4v1673253010293!5m2!1suz!2s" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br></div></div>
    <div class="contacts__managers">
 
     <!-- Left -->
