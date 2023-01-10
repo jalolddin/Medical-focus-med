@@ -14,22 +14,32 @@
             </div>
         </div>
 
-<div class="catalogy__id__title">
-      <div class="info__1">
-              <img  :src="('https://focusmed.uz/' + product.images)" alt="">
-        <h2 v-if="product.benefits">Benefits</h2>
-                <p v-html="product.benefits"></p>
+<div class="fullInfo">
+        <!-- Text -->
+        <div class="fullInfo__text">
+                <div>
+                        <h1>{{product.title}}</h1>
+                </div>
+                <div>
+                        <h1>Описание</h1>
+                        <p v-html="product.description"></p>
+                </div>
+                <br>
+                <div>
+                        <h1 v-if="product.benefits">Преимущества</h1>
+                        <p v-html="product.benefits"></p>
+                </div>
         </div>
-        <div class="info__2">
-                <h1>{{product.title}}</h1>
-                <p v-html="product.description"></p>
-        </div>
-</div>
-<div class="info">
-        <div>
-                <h2 v-if="product.benefits">Description</h2>
-                <p v-html="product.description"></p>
-        </div>
+
+        <!-- Image -->
+        
+        <div class="fullInfo__image">
+                <expandable-image
+  :src="('https://focusmed.uz/' + product.images)"
+/>
+
+                <!-- <img  :src="('https://focusmed.uz/' + product.images)" alt=""> -->
+          </div>
 </div>
 <Contact />
 </div>

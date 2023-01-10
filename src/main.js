@@ -15,10 +15,13 @@ import './assets/styles/ranking.scss'
 import './assets/styles/responsive.scss'
 import './assets/styles/service.scss'
 import PureCounter from '@srexi/purecounterjs'
+import VueExpandableImage from 'vue-expandable-image'
+Vue.use(VueExpandableImage)
 Vue.config.productionTip = false
 
 new Vue({
     router,
+    VueExpandableImage,
     store,
     PureCounter,
     render: h => h(App)

@@ -21,8 +21,8 @@
 
     <!-- Right Side -->
 
-    <div     class="catalogy__content__right">
-<div  v-show="product.category === catalogy" v-for="product in products.products" :key="product" v-bind:style="{ 'background-image': 'url(' + 'https://focusmed.uz' + product.photo + ')' }">
+    <div class="catalogy__content__right">
+<div  @click="goInside(product.id)" v-show="product.category === catalogy" v-for="product in products.products" :key="product" v-bind:style="{ 'background-image': 'url(' + 'https://focusmed.uz' + product.photo + ')' }">
 <h4>{{product.title}}</h4>
 </div>
     </div>

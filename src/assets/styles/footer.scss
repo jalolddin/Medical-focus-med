@@ -1,16 +1,21 @@
 .footer {
-    background: linear-gradient(0deg, rgb(255 255 255 / 10%), rgb(255 255 255 / 50%));
+    background-image: url('../images/footer_image.png');
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../images/footer_image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background: linear-gradient(0deg, rgb(255 255 255 / 10%), rgb(255 255 255 / 50%));
     border-top: 2px solid #2C90A8;
     height: 23rem;
     margin-bottom: 0;
     display: flex;
     align-items: flex-start;
-    padding: 3rem;
+    padding: 1rem;
     padding-left: 5%;
     padding-right: 5%;
     gap: 3rem;
     justify-content: space-between;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
+    color: white;
     &__icons {
         // background-color: red;
         display: flex;
@@ -53,7 +58,7 @@
             padding-left: 0;
             a {
                 text-decoration: none;
-                color: black;
+                color: white;
                 &:hover {
                     color: #2C90A8;
                 }
