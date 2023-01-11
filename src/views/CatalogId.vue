@@ -15,6 +15,16 @@
         </div>
 
 <div class="fullInfo">
+        <!-- Image -->
+        
+        <div class="fullInfo__image">
+                <expandable-image
+  :src="('https://focusmed.uz/' + product.images)"
+/>
+
+                <!-- <img  :src="('https://focusmed.uz/' + product.images)" alt=""> -->
+          </div>
+          
         <!-- Text -->
         <div class="fullInfo__text">
                 <div>
@@ -31,15 +41,6 @@
                 </div>
         </div>
 
-        <!-- Image -->
-        
-        <div class="fullInfo__image">
-                <expandable-image
-  :src="('https://focusmed.uz/' + product.images)"
-/>
-
-                <!-- <img  :src="('https://focusmed.uz/' + product.images)" alt=""> -->
-          </div>
 </div>
 <Contact />
 </div>
