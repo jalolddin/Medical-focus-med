@@ -1,10 +1,8 @@
 .partners {
-    // background: #F5F5F5;
     padding-bottom: 2rem;
     width: 85%;
     margin: 0 auto;
     &__cards {
-        // padding-left: 1.5%;
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -24,6 +22,29 @@
             cursor: pointer;
             img {
                 height: 30%;
+            }
+        }
+    }
+    &__id {
+        .partner {
+            padding-top: 1%;
+            display: flex;
+            // align-items: center;
+            width: 90%;
+            margin: 0 auto;
+            justify-content: space-between;
+            .partner__image {
+                margin-top: 10%;
+                width: 45%;
+                height: 50%;
+                // background-color: red;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .partner__text {
+                width: 40%;
             }
         }
     }

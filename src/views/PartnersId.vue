@@ -1,30 +1,31 @@
 <template>
-    <div class="catalogy__id">
+    <div class="partners__id">
+        <div class="catalogy__id">
             <div class="catalogy__image">
                 <div class="catalogy__image__text">
                     <h2>{{product.title}}</h2>
                     <p>
                         <router-link :to="{name: 'home'}">
-                        Главная 
+                            Главная 
                         </router-link>
                         <router-link :to="{name: 'PartnersId'}">
-                                / {{product.title}}
-                            </router-link>
+                            / {{product.title}}
+                        </router-link>
                     </p>
                 </div>
             </div>
-    
-    <div class="partner_id">
-          <div class="info__1">
+            
+    <div class="partner">
+          <div class="partner__image">
                   <img  :src="('https://focusmed.uz/' + product.photo)" alt="">
-                  <h1>{{product.title}}</h1>
-                    <p v-html="product.description"></p>
-            </div>
-            <!-- <div class="info__2">
+                </div>
+                <div class="partner__text">
                     <h1>{{product.title}}</h1>
                     <p v-html="product.description"></p>
-            </div> -->
-    </div>
+                </div>
+                
+            </div>
+        </div>
     <Contact />
     </div>
      

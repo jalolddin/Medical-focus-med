@@ -80,7 +80,7 @@
 </div>
 </template>
 <script>
-
+import { Slide } from 'vue-burger-menu' 
 import Footer from '../components/Footer.vue'
 import Navbar from '../components/Navbar.vue'
 import Ranking from '../components/Ranking.vue'
@@ -94,7 +94,8 @@ components: {
     Ranking,
     Contact,
     Footer,
-    VueSlickCarousel 
+    VueSlickCarousel,
+    Slide
 },
 data(){
     return{
@@ -110,6 +111,32 @@ settings: {
   "speed": 5000,
   "autoplaySpeed": 0,
   "cssEase": "linear",
+  "responsive": [
+    {
+      "breakpoint": 1024,
+      "settings": {
+        "slidesToShow": 3,
+        "slidesToScroll": 3,
+        "infinite": true,
+        // "dots": true
+      }
+    },
+    {
+      "breakpoint": 600,
+      "settings": {
+        "slidesToShow": 2,
+        "slidesToScroll": 2,
+        "initialSlide": 2
+      }
+    },
+    {
+      "breakpoint": 480,
+      "settings": {
+        "slidesToShow": 1,
+        "slidesToScroll": 1
+      }
+    }
+  ]
 //   "rtl": true
 },
 settings_2: {
@@ -123,7 +150,33 @@ settings_2: {
   "speed": 5000,
   "autoplaySpeed": 0,
   "cssEase": "linear",
-  "rtl": true
+  "rtl": true,
+  "responsive": [
+    {
+      "breakpoint": 1024,
+      "settings": {
+        "slidesToShow": 3,
+        "slidesToScroll": 3,
+        "infinite": true,
+        // "dots": true
+      }
+    },
+    {
+      "breakpoint": 600,
+      "settings": {
+        "slidesToShow": 2,
+        "slidesToScroll": 2,
+        "initialSlide": 2
+      }
+    },
+    {
+      "breakpoint": 480,
+      "settings": {
+        "slidesToShow": 1,
+        "slidesToScroll": 1
+      }
+    }
+  ]
 }
     }
 },
