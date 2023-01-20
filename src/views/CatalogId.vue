@@ -36,8 +36,12 @@
                 </div>
                 <br>
                 <div>
-                        <h1 v-if="product.benefits">Преимущества</h1>
+                        <h1 v-if="product.benefits">Технические характеристики:</h1>
                         <p v-html="product.benefits"></p>
+                </div>
+                <div>
+                        <h1 v-if="product.extra_info">Выполняемые тесты:</h1>
+                        <p v-html="product.extra_info"></p>
                 </div>
         </div>
 

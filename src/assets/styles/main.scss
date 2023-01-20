@@ -10,6 +10,29 @@ body {
 }
 
 .home {
+    .bm-burger-bars {
+        background-color: #2C90A8;
+    }
+    .bm-burger-button {
+        top: 1.8%;
+        height: 1.5rem;
+        width: 2rem;
+    }
+    .bm-menu {
+        background-color: #2C90A8;
+        display: flex;
+        justify-content: center;
+        left: 0;
+    }
+    .bm-cross-button,
+    .cross-style {
+        left: 88%;
+        top: 3%;
+    }
+    .bm-item-list>* {
+        color: white;
+        list-style: none;
+    }
     background-color: rgb(243 243 243);
     padding-bottom: 6rem;
     &__header {
