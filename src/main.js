@@ -16,6 +16,8 @@ import './assets/styles/responsive.scss'
 import './assets/styles/service.scss'
 import PureCounter from '@srexi/purecounterjs'
 import VueExpandableImage from 'vue-expandable-image'
+import checkView from 'vue-check-view'
+Vue.use(checkView)
 Vue.use(VueExpandableImage)
 Vue.config.productionTip = false
 
