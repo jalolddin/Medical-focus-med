@@ -13,7 +13,7 @@
 <!-- Types -->
 <div class="catalogy__content">
     <div class="catalogy__content__left">
-<div @click="showItem()" v-for="product in products.categories" :key="product">
+<div  :class="{'activeIndex': product.title === catalogy}" @click="showItem(product.title)" v-for="product in products.categories" :key="product">
 <p class="title">{{product.title}}</p>
 <p>{{product.product_count}}</p>
 </div>
@@ -47,6 +47,9 @@ export default {
     }
     },
     methods: {
+        showItem(item){
+this.catalogy = item
+        },
 goInside(id){
     this.$router.push({name: 'catalogId', params: {id: id}})
 }

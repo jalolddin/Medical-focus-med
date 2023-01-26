@@ -21,8 +21,6 @@
                 <expandable-image
   :src="('https://focusmed.uz/' + product.images)"
 />
-
-                <!-- <img  :src="('https://focusmed.uz/' + product.images)" alt=""> -->
           </div>
           
         <!-- Text -->

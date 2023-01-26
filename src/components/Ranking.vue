@@ -19,7 +19,7 @@
         <h3>Эксклюзивных Соглашений с Мировыми Производителями</h3>
         </div>
         <div>
-            <h1 class="count-num" data-count="5">0</h1>
+            <h1 class="count-num" data-count="50">0</h1>
             <h3>Довольных Клиентов</h3>
         </div>
     </div>
