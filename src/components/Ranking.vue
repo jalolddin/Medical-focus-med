@@ -1,24 +1,54 @@
 <template>
-<div v-view="getHeight" class="ranking">
-    <h1>Наши показатели</h1>
+<div v-view.once="getHeight" class="ranking">
+    <h1
+    data-aos="slide-up"
+    data-aos-duration="1000"
+    data-aos-ease="ease"
+    data-aos-delay="500" 
+    >Наши показатели</h1>
     <div>
-        <div>
+        <div
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-ease="ease"
+         data-aos-delay="500" 
+        >
             <h1 class="count-num" data-count="5">0</h1>
             <h3>Лет Опыта Поставок</h3>
         </div>
-        <div>
+        <div
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-ease="ease"
+         data-aos-delay="500" 
+        >
             <h1 class="count-num" data-count="12">0</h1>
             <h3>Больших Проектов</h3>
         </div>
-        <div>
+        <div
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-ease="ease"
+         data-aos-delay="500" 
+        >
             <h1 class="count-num" data-count="10">0</h1>
             <h3>Участие и Посещение Внутренних и Международных Выставок</h3>
         </div>
-        <div>
+        <div
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-ease="ease"
+         data-aos-delay="500" 
+        >
             <h1 class="count-num" data-count="14">0</h1>
         <h3>Эксклюзивных Соглашений с Мировыми Производителями</h3>
         </div>
-        <div>
+        <div
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-ease="ease"
+         data-aos-delay="500" 
+        >
             <h1 class="count-num" data-count="50">0</h1>
             <h3>Довольных Клиентов</h3>
         </div>
@@ -51,17 +81,14 @@ export default {
         },
         
         {
-            
-            duration: 500,
+            duration: 800,
             easing:'linear',
             step: function() {
                 $this.text(Math.floor(this.countNum));
             },
             complete: function() {
-                
                 $this.text(this.countNum);
                 $this.append('<p>+</p>')
-                //alert('finished');
             }
         });   
     });   

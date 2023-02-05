@@ -2,8 +2,18 @@
     <div class="company">
         <div class="catalogy__image">
             <div class="catalogy__image__text">
-                <h2>О Компании</h2>
-                <p>
+                <h2
+                data-aos="slide-up"
+                 data-aos-duration="1000"
+                 data-aos-ease="ease"
+                 data-aos-delay="500" 
+                >О Компании</h2>
+                <p
+                data-aos="slide-up"
+                 data-aos-duration="1000"
+                 data-aos-ease="ease"
+                 data-aos-delay="500" 
+                >
                     <router-link :to="{name: 'home'}">
                     Главная 
                     </router-link>
@@ -12,7 +22,12 @@
         </div>
         <!-- About Company -->
     <div class="company__about">
-<div class="company__about__left">
+<div 
+data-aos="slide-up"
+data-aos-duration="1000"
+data-aos-ease="ease"
+data-aos-delay="500" 
+class="company__about__left">
 <h1>Компания <span>FOCUSMED</span></h1>
 <p>
     FOCUSMED - локальная компания, специализирующаяся на оснащении и обслуживании с долгих лет клинико-диагностических лабораторий, микробиологических лабораторий, ПЦР лабораторией и ветеринарных кабинетов современным оборудованием, реагентами и расходными материалами.
@@ -96,10 +111,20 @@
     </div> -->
     <!-- Service -->
     <div class="company__service">
-        <div class="company__service__left">
+        <div
+        data-aos="slide-up"
+    data-aos-duration="1000"
+    data-aos-ease="ease"
+    data-aos-delay="500" 
+        class="company__service__left">
             <img src="../assets/images/service__image.png" alt="">
         </div>
-        <div class="company__service__right">
+        <div 
+        data-aos="slide-up"
+    data-aos-duration="1000"
+    data-aos-ease="ease"
+    data-aos-delay="600"
+        class="company__service__right">
 <h1>Сервисное обслуживание</h1>
 <p>Монтаж, пуско-наладка и обучение специалистов производится лицензированной инженерной службой компании и в специализированном оборудованном сервисном центре. Наши сервисные инженеры проходят обучение на предприятиях фирм-производителей и имеют сертификаты, подтверждающие их квалификацию.
 <br>
@@ -127,8 +152,18 @@
     </div> -->
     <!-- Aksiya -->
     <div class="company__news">
-        <h1>Новости</h1>
-        <div>
+        <h1 
+        data-aos="slide-up"
+        data-aos-duration="1000"
+         data-aos-ease="ease"
+        data-aos-delay="500" 
+        >Новости</h1>
+        <div 
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-ease="ease"
+        data-aos-delay="500" 
+        >
             <div>
                 <div>
                     <h6>03 Ноября 2022</h6>

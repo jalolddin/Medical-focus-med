@@ -4,48 +4,99 @@
 <!-- Header -->
 
 <div class="home__header">
-    <div>
+    <div 
+    data-aos="slide-up"
+    data-aos-duration="1000"
+    data-aos-ease="ease"
+    data-aos-delay="500"
+    >
         <h1>ЛАБОРАТОРНОЕ ОБОРУДОВАНИЕ, РЕАГЕНТЫ и РАСХОДНЫЕ МАТЕРИАЛЫ</h1>
         <p>Реализация многоуровневых проектов по созданию, реконструкции и оснащению лечебно-профилактических учреждений</p>
     </div>
-    <router-link :to="{name: 'catalogy'}">
+    <router-link 
+    data-aos="zoom-in"
+    data-aos-duration="1500"
+    data-aos-delay="500"
+    :to="{name: 'catalogy'}">
         <button>Просмотреть каталог</button>
 </router-link>
     </div>
 
 <!-- Department -->
-<div class="home__department">
+<div 
+
+class="home__department">
     <h1>Популярные направление</h1>
     <div>
-        <div>
+        <div 
+        data-aos="slide-up"
+        data-aos-duration="00"
+        data-aos-ease="ease"
+         data-aos-delay="500"  
+        >
             <img src="../assets/images/ifa.png" alt="">
             <h3>Гематологические анализаторы</h3>
         </div>
-        <div>
+        <div 
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-ease="ease"
+         data-aos-delay="500" 
+        >
             <img src="../assets/images/psr.png" alt="">
             <h3> Биохимические анализаторы</h3>
         </div>
-        <div>
+        <div
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-ease="ease"
+         data-aos-delay="500" 
+        >
             <img src="../assets/images/labaratory.png" alt="">
             <h3>Анализаторы мочи</h3>
         </div>
-        <div>
+        <div
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-ease="ease"
+         data-aos-delay="500" 
+        >
             <img src="../assets/images/moch.png" alt="">
             <h3>Анализаторы для ИФА</h3>
         </div>
-        <div>
+        <div
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-ease="ease"
+         data-aos-delay="500" 
+        >
             <img src="../assets/images/analiz.png" alt="">
             <h3>Коагулометры</h3>
         </div>
-        <div>
+        <div
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-ease="ease"
+         data-aos-delay="500" 
+        >
             <img src="../assets/images/bio.png" alt="">
             <h3>ПЦР лаборатория</h3>
         </div>
-        <div>
+        <div
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-ease="ease"
+         data-aos-delay="500" 
+        >
             <img src="../assets/images/gas.png" alt="">
             <h3>Анализаторы газов и электролитов крови</h3>
         </div>
-        <div>
+        <div
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-ease="ease"
+         data-aos-delay="500" 
+        >
             <img src="../assets/images/dose.png" alt="">
             <h3>Микробиологические анализаторы</h3>
         </div>
@@ -55,7 +106,12 @@
 
 <!-- Partners -->
 <div class="home__partners">
-    <h1>Нашы партнёры</h1>
+    <h1
+    data-aos="slide-up"
+    data-aos-duration="1000"
+    data-aos-ease="ease"
+    data-aos-delay="500" 
+    >Нашы партнёры</h1>
 <!-- <div class="partner__images"> -->
     <VueSlickCarousel   v-bind="settings" v-if="partners.length">
     <div  class="partner__image"  v-for="partner in partners" :key="partner">

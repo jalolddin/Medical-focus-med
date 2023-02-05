@@ -56,6 +56,9 @@
                 font-size: 1rem;
                 &:hover {
                     color: #2C90A8;
+                    &:nth-last-child(6) {
+                        color: white;
+                    }
                 }
             }
         }

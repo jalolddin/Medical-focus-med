@@ -2,8 +2,18 @@
     <div class="service">
         <div class="catalogy__image">
             <div class="catalogy__image__text">
-                <h2>Сервисный центр</h2>
-                <p>
+                <h2
+                data-aos="slide-up"
+                data-aos-duration="1000"
+                 data-aos-ease="ease"
+                 data-aos-delay="500" 
+                >Сервисный центр</h2>
+                <p
+                data-aos="slide-up"
+                data-aos-duration="1000"
+                 data-aos-ease="ease"
+                 data-aos-delay="500" 
+                >
                     <router-link :to="{name: 'home'}">
                     Главная 
                     </router-link>
@@ -11,17 +21,32 @@
             </div>
         </div>
         <div class="service__content">
-            <div class="service__content__right">
+            <div
+            data-aos="slide-up"
+                data-aos-duration="1000"
+                 data-aos-ease="ease"
+                 data-aos-delay="500" 
+            class="service__content__right">
                 <img src="../assets/images/service__image.png" alt="">
             </div>
-<div class="service__content__left">
+<div
+data-aos="slide-up"
+data-aos-duration="1000"
+data-aos-ease="ease"
+data-aos-delay="500" 
+class="service__content__left">
     <h1>Сервисный центр <span>FOCUSMED</span> </h1>
     <p>Сервисный центр FOCUSMED обеспечивает квалифицированную техническую поддержку лабораторного медицинского оборудования.
 Мы сотрудничаем с лабораториями государственных и коммерческих учреждений. Работы проводятся стационарно в условиях высокотехнологичной мастерской или с выездом на место эксплуатации оборудования.
 Инженеры сервисного центра имеют сертификаты на ремонт и обслуживание медицинского оборудования, проходят курсы повышения квалификации.</p>
 </div>
         </div>
-        <div class="service__steps">
+        <div 
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-ease="ease"
+        data-aos-delay="500" 
+        class="service__steps">
             <div>
 <h1>01</h1>
 <p>Диагностика неисправности, ремонты любого уровня сложности (включая поэлементный ремонт, настройку печатных плат, перепрограммирование микросхем)</p>

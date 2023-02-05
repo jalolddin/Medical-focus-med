@@ -2,16 +2,33 @@
     <div class="partners">
         <div class="catalogy__image">
             <div class="catalogy__image__text">
-                <h2>Наши партнеры</h2>
-                <p>
+                <h2
+                data-aos="slide-up"
+                data-aos-duration="1000"
+                data-aos-ease="ease"
+                data-aos-delay="500" 
+                >Наши партнеры</h2>
+                <p
+                data-aos="slide-up"
+                data-aos-duration="1000"
+                 data-aos-ease="ease"
+                 data-aos-delay="500" 
+                >
                     <router-link :to="{name: 'home'}">
                     Главная 
                     </router-link>
                     / Партнеры</p>
             </div>
         </div>
-        <div class="partners__cards">
-<div @click="goInside(partner.id)" v-for="partner in partners" :key="partner">
+        <div 
+        data-aos="slide-up"
+                data-aos-duration="1000"
+                 data-aos-ease="ease"
+                 data-aos-delay="500" 
+         class="partners__cards">
+<div
+
+@click="goInside(partner.id)" v-for="partner in partners" :key="partner">
 <img  :src="('https://focusmed.uz/' + partner.photo)" alt="">
 </div>
         </div>
