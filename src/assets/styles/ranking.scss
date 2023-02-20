@@ -38,16 +38,9 @@
                 display: flex;
                 gap: 0.1rem;
                 p {
-                    margin-top: 1.8rem;
-                    font-size: 7.5rem;
+                    margin-top: 2rem;
+                    font-size: 6rem;
                 }
-                // &::after {
-                //     content: '+';
-                //     font: 800 4rem system-ui;
-                //     // content: counter(count);
-                //     animation: counter 5s linear infinite alternate;
-                //     // counter-reset: count 0;
-                // }
             }
             h3 {
                 color: rgb(89 94 99);
@@ -60,12 +53,5 @@
                 font-weight: 500;
             }
         }
-        // &:nth-child(5) {
-        //     // background: linear-gradient(273.37deg, #73CEE3 1.45%, #2C90A8 119.64%);
-        //     width: 16.5rem;
-        //     height: 16rem;
-        //     // color: white;
-        //     border-radius: 2rem;
-        // }
     }
 }

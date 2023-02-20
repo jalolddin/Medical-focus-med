@@ -1,103 +1,78 @@
 <template>
-<div v-view.once="getHeight" class="ranking">
+<div class="ranking">
     <h1
     data-aos="slide-up"
     data-aos-duration="1000"
     data-aos-ease="ease"
-    data-aos-delay="500" 
+    data-aos-delay="300" 
     >Наши показатели</h1>
     <div>
         <div
+        v-view="getHeight"
+        v-for="item in counterData" :key="item"
         data-aos="slide-up"
         data-aos-duration="1000"
         data-aos-ease="ease"
-         data-aos-delay="500" 
+         data-aos-delay="300" 
         >
-            <h1 class="count-num" data-count="5">0</h1>
-            <h3>Лет Опыта Поставок</h3>
-        </div>
-        <div
-        data-aos="slide-up"
-        data-aos-duration="1000"
-        data-aos-ease="ease"
-         data-aos-delay="500" 
-        >
-            <h1 class="count-num" data-count="12">0</h1>
-            <h3>Больших Проектов</h3>
-        </div>
-        <div
-        data-aos="slide-up"
-        data-aos-duration="1000"
-        data-aos-ease="ease"
-         data-aos-delay="500" 
-        >
-            <h1 class="count-num" data-count="10">0</h1>
-            <h3>Участие и Посещение Внутренних и Международных Выставок</h3>
-        </div>
-        <div
-        data-aos="slide-up"
-        data-aos-duration="1000"
-        data-aos-ease="ease"
-         data-aos-delay="500" 
-        >
-            <h1 class="count-num" data-count="14">0</h1>
-        <h3>Эксклюзивных Соглашений с Мировыми Производителями</h3>
-        </div>
-        <div
-        data-aos="slide-up"
-        data-aos-duration="1000"
-        data-aos-ease="ease"
-         data-aos-delay="500" 
-        >
-            <h1 class="count-num" data-count="50">0</h1>
-            <h3>Довольных Клиентов</h3>
+        <h1 class="count-num">{{ item.count }} <p>+</p></h1>
+        <h3>{{ item.trans }}</h3>
         </div>
     </div>
 </div>    
 </template>
 <script>
-import countTo from 'vue-count-to';
-import $ from 'jquery'
+
 export default {
-    components: { countTo },
     data () {
       return {
-        experience: 5,
-        projects: 12,
-        exibitions: 10,
-        productions: 14,
-        experts: 50
+        counterData: [
+      {
+        trans: 'Лет Опыта Поставок',
+        id   : 5,
+        count: 0,
+        duration   : 300,
+      },
+      {
+        trans: 'Больших Проектов',
+        id   : 12,
+        count: 0,
+        duration   : 300,
+      },
+      {
+        trans: 'Участие и Посещение Внутренних и Международных Выставок',
+        id   : 10,
+        count: 0,
+        duration   : 300,
+      },
+      {
+        trans: 'Эксклюзивных Соглашений с Мировыми Производителями',
+        id   : 14,
+        count: 0,
+        duration   : 300,
+      },
+      {
+        trans: 'Довольных Клиентови',
+        id   : 50,
+        count: 0,
+        duration   : 300,
+      },
+                ],
       }
     },
     methods: {
         getHeight(){
-            $(function(){
-                $('.count-num').each(function() {
-  var $this = $(this),
-      countTo = $this.attr('data-count');
-      
-      $({ countNum: $this.text()}).animate({
-          countNum: countTo
-        },
-        
-        {
-            duration: 800,
-            easing:'linear',
-            step: function() {
-                $this.text(Math.floor(this.countNum));
-            },
-            complete: function() {
-                $this.text(this.countNum);
-                $this.append('<p>+</p>')
-            }
-        });   
-    });   
-});
+
+     this.counterData.forEach((item) => {
+      setInterval(() => {
+        if (item.count < item.id) {
+          item.count++;
+        }
+      }, item.duration);
+    });
 }
     },
-    // created(){
-    //   window.addEventListener('scroll', this.getHeight)
-    // },
+
     mounted(){
     }
 }

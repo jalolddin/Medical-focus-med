@@ -26,19 +26,19 @@
     <h2>Страницы</h2>
     <ul>
         <router-link :to="{name: 'Company'}">
-            <li>О компании</li>
+            <li @click="goCompany()">О компании</li>
         </router-link>
         <router-link :to="{name: 'catalogy'}">
-            <li>Каталог</li>
+            <li  @click="goCompany()">Каталог</li>
         </router-link>
         <router-link :to="{name: 'Projects'}">
-            <li>Проекты</li>
+            <li  @click="goCompany()">Проекты</li>
         </router-link>
         <router-link :to="{name: 'Partners'}">
-            <li>Партнеры</li>
+            <li  @click="goCompany()">Партнеры</li>
         </router-link>
         <router-link :to="{name: 'Service'}">
-            <li>Сервисный центр</li>
+            <li  @click="goCompany()">Сервисный центр</li>
         </router-link>
     </ul>
 </div>
@@ -63,13 +63,16 @@
     </div>
 </div>
 </div>
-<!-- <div class="footer__button">
-    <button>Обратный звонок</button>
-</div> -->
 
 
 </div>
 </template>
 <script>
-
+export default{
+    methods: {
+        goCompany(){
+            window.scrollTo(0,0)
+        }
+    }
+}
 </script>

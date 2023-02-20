@@ -61,10 +61,12 @@ Contact
         info: this.$route.params.id
         }
 },
+
 mounted(){
         axios.get(`https://focusmed.uz/api/products/${this.info}`).then((res) => {
             this.product = res.data
-            console.log(res.data)
+            this.$store.commit('changeTab', this.product.category)
+            console.log(this.$store.state.tabName)
         }).catch((err) => {
             console.log(err)
         })
