@@ -75,33 +75,68 @@ v-if="regionId"
 <!-- ProjectInfo -->
         
 <div v-show="image.title === imageId" v-for="image in projects" :key="image" class="projectInfo">
-    <h3>"{{ image.title }}"</h3>
+    <div class="iconsContainer">
+        <h3>"{{ image.title }}"</h3>
+    <div v-if="image.photos.length" class="icons">
+        <img  @click="prev()" src="../assets/icons/prev.svg" alt="">
+        <img @click="next()" src="../assets/icons/next.svg" alt="">
 
-    <img v-if="imageAddress" :src="('https://focusmed.uz/' + imageAddress )" alt="">
-    <img v-else :src="('https://focusmed.uz/' + image.photos[0] )" alt="">
- 
+    </div>
+    </div>
+
+    
     <div class="second">
-        <img @click="chooseImage(img)" v-for="(index, img) in image.photos" :key="index" :src="('https://focusmed.uz/' + img)" alt="">
+            <div class="main">
+                <img  v-for="(img, index) in image.photos" :key="index" v-show="index === imageIndex" :src="('https://focusmed.uz/' + img)" alt="">
+            </div>
+            <div class="imageCarousel">
+                <img v-for="(img, index) in image.photos" :key="index" @click="chooseImage(index)"  :src="('https://focusmed.uz/' + img)" alt="">
+            </div>
     </div>
 </div>
     </div>
 </template>
 <script>
 import axios from 'axios'
+
 export default{
     data(){
-        return{
+    return{
 regions: null,
 projects: null,
 regionId: null,
 imageId: null,
 imageAddress: null,
-selected: null
+imageIndex: 0,
+selected: null,
+photoLength: null
         }
     },
     methods: {
-        chooseImage(item){
-this.imageAddress = item
+        next(index){
+  this.projects.forEach((item) => {
+ if(item.title === this.imageId){
+    this.photoLength = item.photos.length
+ }
+  })
+  this.imageIndex++
+  if(this.photoLength <= this.imageIndex){
+    this.imageIndex = 0
+  }
+        },
+        prev(){
+this.projects.forEach((item) => {
+ if(item.title === this.imageId){
+    this.photoLength = item.photos.length
+ }
+  })
+    this.imageIndex--
+    if(this.imageIndex < 0){
+        this.imageIndex = this.photoLength - 1
+    }
+        },
+chooseImage(item){
+this.imageIndex = item
 },
 goBack(){
     this.regionId = !this.regionId
@@ -133,6 +168,19 @@ this.imageId = id
     flex-direction: column;
     margin-bottom: 3rem;
 }
+.projectInfo .iconsContainer .icons img{
+height: 1.5rem;
+}
+.projectInfo .iconsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+/* padding-right: 5%; */
+}
+.projectInfo .iconsContainer .icons{
+display: flex;
+gap: 2rem;
+}
 .projectInfo p{
     margin-top: -0.5rem;
 }
@@ -147,6 +195,23 @@ font-size: 2.5rem;
     display: flex;
     flex-wrap: wrap;
  gap: 0.5rem;
+}
+.projectInfo .second .main{
+    width: 100%;
+}
+.projectInfo .second .main img{
+    width: 100%;
+    height: 100%;
+}
+.projectInfo .second {
+display: flex;
+flex-direction: column;
+}
+.projectInfo .second  .imageCarousel{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 0.2rem;
 }
 .projectInfo .second img{
     height: 7rem;

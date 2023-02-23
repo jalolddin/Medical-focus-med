@@ -33,6 +33,8 @@ new Vue({
     PureCounter,
     render: h => h(App),
     mounted() {
-        AOS.init()
+        AOS.init({
+            once: true
+        })
     },
 }).$mount('#app')

@@ -54,7 +54,11 @@
                 border-radius: 50%;
                 font-size: 3.5rem;
                 color: white;
-                width: 5.5rem;
+                height: 5rem;
+                width: 5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             p {
                 width: 80%;
