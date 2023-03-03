@@ -21,7 +21,12 @@ import checkView from 'vue-check-view'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import inViewportDirective from 'vue-in-viewport-directive'
+import VueToast from 'vue-toast-notification';
+// Import one of the available themes
+//import 'vue-toast-notification/dist/theme-default.css';
+import 'vue-toast-notification/dist/theme-sugar.css';
 Vue.directive('in-viewport', inViewportDirective)
+Vue.use(VueToast);
 Vue.use(checkView)
 Vue.use(VueExpandableImage)
 Vue.config.productionTip = false
