@@ -27,7 +27,7 @@
                  data-aos-ease="ease"
                  data-aos-delay="500" 
             class="service__content__right">
-                <img src="../assets/images/service__image.png" alt="">
+                <img src="../assets/images/service__image.png" alt="Сервисный центр FOCUSMED">
             </div>
 <div
 data-aos="slide-up"

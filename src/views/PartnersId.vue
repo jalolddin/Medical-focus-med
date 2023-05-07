@@ -17,7 +17,7 @@
             
     <div class="partner">
           <div class="partner__image">
-                  <img  :src="('https://focusmed.uz/' + product.photo)" alt="">
+                  <img  :src="('https://focusmed.uz/' + product.photo)" alt="Лабораторное оборудование, реагенты и приборы в Узбекистане">
                 </div>
                 <div class="partner__text">
                     <h1>{{product.title}}</h1>

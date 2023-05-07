@@ -29,7 +29,7 @@
 <div
 
 @click="goInside(partner.id)" v-for="partner in partners" :key="partner">
-<img  :src="('https://focusmed.uz/' + partner.photo)" alt="">
+<img  :src="('https://focusmed.uz/' + partner.photo)" alt="Лабораторное оборудование, реагенты и приборы в Узбекистане">
 </div>
         </div>
         <Contact />

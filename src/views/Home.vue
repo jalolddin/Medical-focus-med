@@ -34,7 +34,7 @@ class="home__department">
         data-aos-ease="ease"
          data-aos-delay="500"  
         >
-            <img src="../assets/images/ifa.png" alt="">
+            <img src="../assets/images/ifa.png" alt="Гематологические анализаторы в Ташкенте">
             <h3>Гематологические анализаторы</h3>
         </div>
         <div 
@@ -43,8 +43,8 @@ class="home__department">
         data-aos-ease="ease"
          data-aos-delay="500" 
         >
-            <img src="../assets/images/psr.png" alt="">
-            <h3> Биохимические анализаторы</h3>
+            <img src="../assets/images/psr.png" alt="Биохимические анализаторы в Ташкенте">
+            <h3>Биохимические анализаторы</h3>
         </div>
         <div
         data-aos="slide-up"
@@ -52,7 +52,7 @@ class="home__department">
         data-aos-ease="ease"
          data-aos-delay="500" 
         >
-            <img src="../assets/images/labaratory.png" alt="">
+            <img src="../assets/images/labaratory.png" alt="Анализаторы мочи в Ташкенте">
             <h3>Анализаторы мочи</h3>
         </div>
         <div
@@ -61,7 +61,7 @@ class="home__department">
         data-aos-ease="ease"
          data-aos-delay="500" 
         >
-            <img src="../assets/images/moch.png" alt="">
+            <img src="../assets/images/moch.png" alt="Анализаторы для ИФА в Ташкенте">
             <h3>Анализаторы для ИФА</h3>
         </div>
         <div
@@ -70,7 +70,7 @@ class="home__department">
         data-aos-ease="ease"
          data-aos-delay="500" 
         >
-            <img src="../assets/images/analiz.png" alt="">
+            <img src="../assets/images/analiz.png" alt="Коагулометры в Ташкенте">
             <h3>Коагулометры</h3>
         </div>
         <div
@@ -79,7 +79,7 @@ class="home__department">
         data-aos-ease="ease"
          data-aos-delay="500" 
         >
-            <img src="../assets/images/bio.png" alt="">
+            <img src="../assets/images/bio.png" alt="ПЦР лаборатория в Ташкенте">
             <h3>ПЦР лаборатория</h3>
         </div>
         <div
@@ -88,7 +88,7 @@ class="home__department">
         data-aos-ease="ease"
          data-aos-delay="500" 
         >
-            <img src="../assets/images/gas.png" alt="">
+            <img src="../assets/images/gas.png" alt="Анализаторы газов и электролитов крови в Ташкенте">
             <h3>Анализаторы газов и электролитов крови</h3>
         </div>
         <div
@@ -97,7 +97,7 @@ class="home__department">
         data-aos-ease="ease"
          data-aos-delay="500" 
         >
-            <img src="../assets/images/dose.png" alt="">
+            <img src="../assets/images/dose.png" alt="икробиологические анализаторы в Ташкенте">
             <h3>Микробиологические анализаторы</h3>
         </div>
     </div>
@@ -115,17 +115,17 @@ class="home__department">
 <!-- <div class="partner__images"> -->
     <VueSlickCarousel   v-bind="settings" v-if="partners.length">
     <div  class="partner__image"  v-for="partner in partners" :key="partner">
-        <img  style="width: 100%" :src="('https://focusmed.uz/' + partner.photo)" alt="">
+        <img  style="width: 100%" :src="('https://focusmed.uz/' + partner.photo)" alt="Лабораторное оборудование, реагенты и приборы в Узбекистане">
     </div>
     </VueSlickCarousel>
     <VueSlickCarousel   v-bind="settings_2" v-if="partners.length">
     <div  class="partner__image"  v-for="partner in partners" :key="partner">
-        <img  style="width: 100%" :src="('https://focusmed.uz/' + partner.photo)" alt="">
+        <img  style="width: 100%" :src="('https://focusmed.uz/' + partner.photo)" alt="Лабораторное оборудование, реагенты и приборы в Узбекистане">
     </div>
     </VueSlickCarousel>
     <VueSlickCarousel   v-bind="settings" v-if="partners.length">
     <div  class="partner__image"  v-for="partner in partners" :key="partner">
-        <img  style="width: 100%" :src="('https://focusmed.uz/' + partner.photo)" alt="">
+        <img  style="width: 100%" :src="('https://focusmed.uz/' + partner.photo)" alt="Лабораторное оборудование, реагенты и приборы в Узбекистане">
     </div>
     </VueSlickCarousel>
     

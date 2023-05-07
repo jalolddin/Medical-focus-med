@@ -75,23 +75,23 @@ class="company__about__left">
         <h1>Наши преимущества</h1>
         <div>
             <div>
-                <img src="../assets/icons/benefit__1.svg" alt="">
+                <img src="../assets/icons/benefit__1.svg" alt="Обучение врач-лаборантов в Ташкенте">
                 <p>Обучение врач-лаборантов</p>
             </div>
             <div>
-                <img src="../assets/icons/benefit__2.svg" alt="">
+                <img src="../assets/icons/benefit__2.svg" alt="Эксклюзивная линейка инновационного лабораторного оборудования в Ташкенте">
                 <p>Эксклюзивная линейка инновационного лабораторного оборудования</p>
             </div>
             <div>
-                <img src="../assets/icons/benefit__3.svg" alt="">
+                <img src="../assets/icons/benefit__3.svg" alt="команда профессиональных специалистов в Ташкенте">
                 <p>Команда профессиональных специалистов по продажам с большим опытом работы</p>
             </div>
             <div>
-                <img src="../assets/icons/benefit__4.svg" alt="">
+                <img src="../assets/icons/benefit__4.svg" alt="Качественно оснащенный сервисный центр в Ташкенте">
                 <p>Качественно оснащенный сервисный центр с сертифицированным персоналом</p>
             </div>
             <div>
-                <img src="../assets/icons/benefit__5.svg" alt="">
+                <img src="../assets/icons/benefit__5.svg" alt="Полное информационное и техническое сопровождение клиентов в Ташкенте">
                 <p>Полное информационное и техническое сопровождение клиентов</p>
             </div>
         </div>
@@ -113,11 +113,11 @@ class="company__about__left">
     <div class="company__service">
         <div
         data-aos="slide-up"
-    data-aos-duration="1000"
-    data-aos-ease="ease"
-    data-aos-delay="500" 
+        data-aos-duration="1000"
+        data-aos-ease="ease"
+        data-aos-delay="500" 
         class="company__service__left">
-            <img src="../assets/images/service__image.png" alt="">
+            <img src="../assets/images/service__image.png" alt="Сервисное обслуживание лабораторное оборудование в Ташкенте">
         </div>
         <div 
         data-aos="slide-up"

@@ -5,15 +5,15 @@
             <div  class="catalogy__image__text">
                 <h2
                 data-aos="slide-up"
-        data-aos-duration="1000"
-        data-aos-ease="ease"
-         data-aos-delay="500" 
+                data-aos-duration="1000"
+                data-aos-ease="ease"
+                data-aos-delay="500" 
                 >Наш каталог</h2>
                 <p
-            data-aos="slide-up"
-            data-aos-duration="1000"
-            data-aos-ease="ease"
-            data-aos-delay="500" 
+                data-aos="slide-up"
+                data-aos-duration="1000"
+                data-aos-ease="ease"
+                data-aos-delay="500" 
                 >
                     <router-link :to="{name: 'home'}">
                     Главная 
@@ -24,17 +24,17 @@
 <!-- Types -->
 <div class="catalogy__content">
     <div class="catalogy__content__left">
-<div  :class="{'activeIndex': product.title === catalogy}" @click="showItem(product.title)" v-for="(product, index) in products.categories" :key="index">
-<p class="title">{{product.title}}</p>
-<p>{{product.product_count}}</p>
-</div>
+        <div  :class="{'activeIndex': product.title === catalogy}" @click="showItem(product.title)" v-for="(product, index) in products.categories" :key="index">
+            <p class="title">{{product.title}}</p>
+            <p>{{product.product_count}}</p>
+        </div>
     </div>
 
     <!-- Right Side -->
     <div class="catalogy__content__right">
         <div  @click="goInside(product.id)" v-show="product.category === catalogy" v-for="(product, index) in products.products" :key="index" v-bind:style="{ 'background-image': 'url(' + 'https://focusmed.uz' + product.photo + ')' }">
-        <h4>{{product.title}}</h4>
-    </div>
+            <h4>{{product.title}}</h4>
+        </div>
     </div>
 </div>
 

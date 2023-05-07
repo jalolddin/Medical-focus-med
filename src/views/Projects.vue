@@ -87,10 +87,10 @@ v-if="regionId"
     
     <div class="second">
             <div class="main">
-                <img  v-for="(img, index) in image.photos" :key="index" v-show="index === imageIndex" :src="('https://focusmed.uz/' + img)" alt="">
+                <img  v-for="(img, index) in image.photos" :key="index" v-show="index === imageIndex" :src="('https://focusmed.uz/' + img)" alt="Лабораторное оборудование и приборы в Узбекистане">
             </div>
             <div class="imageCarousel">
-                <img v-for="(img, index) in image.photos" :key="index" @click="chooseImage(index)"  :src="('https://focusmed.uz/' + img)" alt="">
+                <img v-for="(img, index) in image.photos" :key="index" @click="chooseImage(index)"  :src="('https://focusmed.uz/' + img)" alt="Лабораторное оборудование и приборы в Узбекистане">
             </div>
     </div>
 </div>

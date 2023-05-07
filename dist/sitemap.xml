@@ -3,14 +3,44 @@
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
 <url>
   <loc>https://focusmed.uz/</loc>
-  <lastmod>2023-04-16T06:13:28+00:00</lastmod>
+  <lastmod>2023-05-6T06:13:28+00:00</lastmod>
 </url>
-
-
+<url>
+  <loc>https://focusmed.uz/#/catalogy</loc>
+  <lastmod>2023-05-6T06:13:28+00:00</lastmod>
+</url>
+<url>
+  <loc>https://focusmed.uz/#/catalogy/id</loc>
+  <lastmod>2023-05-6T06:13:28+00:00</lastmod>
+</url>
+<url>
+  <loc>https://focusmed.uz/#/company</loc>
+  <lastmod>2023-05-6T06:13:28+00:00</lastmod>
+</url>
+<url>
+  <loc>https://focusmed.uz/#/projects</loc>
+  <lastmod>2023-05-6T06:13:28+00:00</lastmod>
+</url>
+<url>
+  <loc>https://focusmed.uz/#/partners</loc>
+  <lastmod>2023-05-6T06:13:28+00:00</lastmod>
+</url>
+<url>
+  <loc>https://focusmed.uz/#/partners/id</loc>
+  <lastmod>2023-05-6T06:13:28+00:00</lastmod>
+</url>
+<url>
+  <loc>https://focusmed.uz/#/contacts</loc>
+  <lastmod>2023-05-6T06:13:28+00:00</lastmod>
+</url>
+<url>
+  <loc>https://focusmed.uz/#/service</loc>
+  <lastmod>2023-05-6T06:13:28+00:00</lastmod>
+</url>
 </urlset>
